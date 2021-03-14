@@ -1,31 +1,95 @@
+# ziye
+# github地址  https://github.com/6Svip120apk69
+# TG频道地址  https://t.me/ziyescript
+# TG交流群    https://t.me/joinchat/GitHubid-sjTESTAAE7XHm-q1-7Np-tF3g
+# boxjs链接   https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
+
+
+
+# ⚠️⚠️⚠️特别重要,务必进行替换操作，不得使用原作者地址
+
+# 具体方法请看: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+
+
+#  以账号    GitHubid-sjTEST
+#  仓库地址  https://github.com/GitHubid-sjTEST/JavaScript 
+#  文件地址   https://raw.githubusercontent.com/GitHubid-sjTEST/JavaScript/ZIYE/Task/shuqi.js    为例 
+
+
+# 主要替换的字符👇
+
+# 书旗小说     //js名字
+# 0 0-15   //定时，如北京时间8到23点，设置0-15
+# shuqiuserurlVal   //环境变量之一，47行处自行添加其他
+# GitHubid-sjTEST      //账号名
+# JavaScript      //仓库名
+# ZIYE     //分支名
+# Task/shuqi.js  //子文件地址
+
+
+
+
 name: 书旗小说
+
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0 0-20/1 * * *'
+     - cron: '4 0-23 * * *'
+  watch:
+    types: started
 jobs:
   build:
-    runs-on: ubuntu-latest       
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    env:
+        shuqiuserurlVal: ${{ secrets.shuqiuserurlVal }}
+        shuqisyurlVal: ${{ secrets.shuqisyurlVal }}
+        shuqisybodyVal: ${{ secrets.shuqisybodyVal }}
+        shuqispbodyVal: ${{ secrets.shuqispbodyVal }}
+        shuqiscbodyVal: ${{ secrets.shuqiscbodyVal }}
+        shuqiydbodyVal: ${{ secrets.shuqiydbodyVal }}
+        shuqiqdbodyVal: ${{ secrets.shuqiqdbodyVal }}		
+        shuqirwbodyVal: ${{ secrets.shuqirwbodyVal }}
+        shuqifxbodyVal: ${{ secrets.shuqifxbodyVal }}
+        shuqisprwurlVal: ${{ secrets.shuqisprwurlVal }}
+        shuqijlbodyVal: ${{ secrets.shuqijlbodyVal }}
+        shuqicjyurlVal: ${{ secrets.shuqicjyurlVal }}
+        shuqicjcsbodyVal: ${{ secrets.shuqicjcsbodyVal }}
+        shuqicjbodyVal: ${{ secrets.shuqicjbodyVal }}
+        shuqijsspbodyVal: ${{ secrets.shuqijsspbodyVal }}
+        shuqijsydurlVal: ${{ secrets.shuqijsydurlVal }}
+        shuqijsydbodyVal: ${{ secrets.shuqijsydbodyVal }}
+        shuqijsqdbodyVal: ${{ secrets.shuqijsqdbodyVal }}
+        shuqijsqdspyurlVal: ${{ secrets.shuqijsqdspyurlVal }}
+        shuqijsrwbodyVal: ${{ secrets.shuqijsrwbodyVal }}
+        shuqijsfxbodyVal: ${{ secrets.shuqijsfxbodyVal }}
+        shuqijssprwurlVal: ${{ secrets.shuqijssprwurlVal }}
     steps:
-      
       - name: Checkout
         run: |
-          git clone https://github.com/66903202/ziye.git ~/js
-      - name: Use Node.js 14.x
+          git clone https://github.com/66903202/ziye.git ~/ziye
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: 12.x
       - name: npm install
+        if: env.shuqiuserurlVal
         run: |
-          cd ~/js
-          npm install got
-          npm install cron
-          npm install request
-      - name: '【书旗小说】'
+          cd ~/ziye
+          git checkout ZIYE
+          npm install
+      - name: '运行 【书旗小说】'
+        if: env.shuqiuserurlVal
         run: |
-          cd ~/js   
+          cd ~/ziye
           node Task/shuqi.js
         env:
 
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
