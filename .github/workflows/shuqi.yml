@@ -4,12 +4,12 @@
 #   branches: 
 #   - master 
 
-name: 步步宝
+name: 书旗小说
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/30 0-23 * * *'
+     - cron: '*/4 0-23 * * *'
   watch:
      types: started
     
