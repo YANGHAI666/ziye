@@ -1,8 +1,8 @@
 /* ziye 
-github地址 https://github.com/6Svip120apk69
+github地址 https://github.com/ziye888
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
+boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs.json
 转载请备注个名字，谢谢
 
 ⚠️书旗小说     手机号账号数据共通， 部分任务可叠加，此脚本包含2个app的所有任务（无阅读挑战赛）共0.8-1元
@@ -21,6 +21,7 @@ boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThx
 3.14 修复极速版书城报错
 3.15 修复收益获取ck显示
 3.18 独立COOKIE增加boxjs复制会话模式
+3.193.19 修复ac报错
 
 ⚠️ 时间设置    7 0-23 * * *    每小时 1次就行 
 ⚠️一共2个软件  普通版15条 极速版11条  共      26个ck  👉 26条 Secrets 
@@ -67,57 +68,57 @@ hostname =render.shuqireader.com,ocean.shuqireader.com,jcollection.shuqireader.c
 #书旗小说获取header
 
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-https:\/\/ocean\.shuqireader\.com\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+https:\/\/ocean\.shuqireader\.com\/* url script-request-header https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #极速版书城
-http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 
 #书旗小说获取body
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 极速版视频 极速版签到视频 极速版阅读 极速版签到 极速版分享 极速版书城
-https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #收益 任务 极速版任务
-https:\/\/render\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+https:\/\/render\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #时长
-https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 
 ############## loon
 
 #书旗小说获取header
 
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-header script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
+http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-header script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
 #极速版书城
-http-request http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
+http-request http:\/\/activity-center-web\.shuqireader\.com\/* url script-request-header script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js, requires-header=true, tag=书旗小说获取header
 
 #书旗小说获取body
 
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 极速版视频 极速版签到视频 极速版阅读 极速版签到 极速版分享 极速版书城
-http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
+http-request https:\/\/ocean\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 #收益 任务 极速版任务
-http-request https:\/\/render\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
+http-request https:\/\/render\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 #时长
-http-request https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
+http-request https:\/\/jcollection\.shuqireader\.com\/* url script-request-body https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js,requires-body=1,max-size=0, tag=书旗小说获取body
 
 ############## surge
 
 #书旗小说获取header
 
 #用户名  视频任务 抽奖页面 极速版签到视频页   极速版视频任务
-书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #极速版书城
-书旗小说获取header = type=http:\/\/activity-center-web\.shuqireader\.com\/*,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+书旗小说获取header = type=http:\/\/activity-center-web\.shuqireader\.com\/*,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 
 #书旗小说获取body
 
 #阅读 签到  分享 奖励 收取奖励  抽奖次数 抽奖 视频 极速版视频 极速版签到视频 极速版阅读 极速版签到  极速版分享 极速版书城
-书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/ocean\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #收益 任务 极速版任务
-书旗小说获取header = type=https:\/\/render\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/render\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 #时长
-书旗小说获取header = type=https:\/\/jcollection\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/shuqi.js
+书旗小说获取header = type=https:\/\/jcollection\.shuqireader\.com\/*,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shuqi.js
 
 
 */
-GXRZ = '3.18 独立COOKIE增加boxjs复制会话模式'
+GXRZ = '3.19 修复ac报错'
 const $ = Env("书旗小说");
 $.idx = ($.idx = ($.getval('shuqiSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
@@ -128,32 +129,32 @@ const notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点
 $.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, ddtime = '';
 CZ = 10
 Length = 0
-const shuqiuserurlArr = [];
-const shuqisyurlArr = [];
-const shuqisybodyArr = [];
-const shuqispbodyArr = [];
-const shuqiscbodyArr = [];
-const shuqiydbodyArr = [];
-const shuqiqdbodyArr = [];
-const shuqirwbodyArr = [];
-const shuqifxbodyArr = [];
-const shuqisprwurlArr = [];
-const shuqijlbodyArr = [];
-const shuqisqjlbodyArr = [];
-const shuqicjyurlArr = [];
-const shuqicjcsbodyArr = [];
-const shuqicjbodyArr = [];
-const shuqijsspbodyArr = [];
-const shuqijsydurlArr = [];
-const shuqijsydbodyArr = [];
-const shuqijsqdbodyArr = [];
-const shuqijsqdspyurlArr = [];
-const shuqijsqdspbodyArr = [];
-const shuqijsrwbodyArr = [];
-const shuqijsfxbodyArr = [];
-const shuqijsbookurlArr = [];
-const shuqijsbookbodyArr = [];
-const shuqijssprwurlArr = [];
+let shuqiuserurlArr = [];
+let shuqisyurlArr = [];
+let shuqisybodyArr = [];
+let shuqispbodyArr = [];
+let shuqiscbodyArr = [];
+let shuqiydbodyArr = [];
+let shuqiqdbodyArr = [];
+let shuqirwbodyArr = [];
+let shuqifxbodyArr = [];
+let shuqisprwurlArr = [];
+let shuqijlbodyArr = [];
+let shuqisqjlbodyArr = [];
+let shuqicjyurlArr = [];
+let shuqicjcsbodyArr = [];
+let shuqicjbodyArr = [];
+let shuqijsspbodyArr = [];
+let shuqijsydurlArr = [];
+let shuqijsydbodyArr = [];
+let shuqijsqdbodyArr = [];
+let shuqijsqdspyurlArr = [];
+let shuqijsqdspbodyArr = [];
+let shuqijsrwbodyArr = [];
+let shuqijsfxbodyArr = [];
+let shuqijsbookurlArr = [];
+let shuqijsbookbodyArr = [];
+let shuqijssprwurlArr = [];
 let shuqiuserurlVal = ``;
 let shuqisyurlVal = ``;
 let shuqisybodyVal = ``;
@@ -180,32 +181,32 @@ let shuqijsfxbodyVal = ``;
 let shuqijsbookurlVal = ``;
 let shuqijsbookbodyVal = ``;
 let shuqijssprwurlVal = ``;
-const middleshuqiuserURL = [];
-const middleshuqisyURL = [];
-const middleshuqisyBODY = [];
-const middleshuqispBODY = [];
-const middleshuqiscBODY = [];
-const middleshuqiydBODY = [];
-const middleshuqiqdBODY = [];
-const middleshuqirwBODY = [];
-const middleshuqifxBODY = [];
-const middleshuqisprwURL = [];
-const middleshuqijlBODY = [];
-const middleshuqisqjlBODY = [];
-const middleshuqicjyURL = [];
-const middleshuqicjcsBODY = [];
-const middleshuqicjBODY = [];
-const middleshuqijsspBODY = [];
-const middleshuqijsydURL = [];
-const middleshuqijsydBODY = [];
-const middleshuqijsqdBODY = [];
-const middleshuqijsqdspyURL = [];
-const middleshuqijsqdspBODY = [];
-const middleshuqijsrwBODY = [];
-const middleshuqijsfxBODY = [];
-const middleshuqijsbookURL = [];
-const middleshuqijsbookBODY = [];
-const middleshuqijssprwURL = [];
+let middleshuqiuserURL = [];
+let middleshuqisyURL = [];
+let middleshuqisyBODY = [];
+let middleshuqispBODY = [];
+let middleshuqiscBODY = [];
+let middleshuqiydBODY = [];
+let middleshuqiqdBODY = [];
+let middleshuqirwBODY = [];
+let middleshuqifxBODY = [];
+let middleshuqisprwURL = [];
+let middleshuqijlBODY = [];
+let middleshuqisqjlBODY = [];
+let middleshuqicjyURL = [];
+let middleshuqicjcsBODY = [];
+let middleshuqicjBODY = [];
+let middleshuqijsspBODY = [];
+let middleshuqijsydURL = [];
+let middleshuqijsydBODY = [];
+let middleshuqijsqdBODY = [];
+let middleshuqijsqdspyURL = [];
+let middleshuqijsqdspBODY = [];
+let middleshuqijsrwBODY = [];
+let middleshuqijsfxBODY = [];
+let middleshuqijsbookURL = [];
+let middleshuqijsbookBODY = [];
+let middleshuqijssprwURL = [];
 if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
     console.log(
         `============ cookie方式为：方式一 boxjs复制会话 =============\n`
@@ -349,93 +350,99 @@ if ($.isNode() && process.env.SQ_shuqiuserURL) {
     } else {
         middleshuqicjBODY = process.env.SQ_shuqicjBODY.split();
     }
-    if (
-        process.env.SQ_shuqijsspBODY &&
-        process.env.SQ_shuqijsspBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsspBODY = process.env.SQ_shuqijsspBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsspBODY = process.env.SQ_shuqijsspBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsydURL &&
-        process.env.SQ_shuqijsydURL.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsydURL = process.env.SQ_shuqijsydURL.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsydURL = process.env.SQ_shuqijsydURL.split();
-    }
-    if (
-        process.env.SQ_shuqijsydBODY &&
-        process.env.SQ_shuqijsydBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsydBODY = process.env.SQ_shuqijsydBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsydBODY = process.env.SQ_shuqijsydBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsqdBODY &&
-        process.env.SQ_shuqijsqdBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsqdBODY = process.env.SQ_shuqijsqdBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsqdBODY = process.env.SQ_shuqijsqdBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsqdspyURL &&
-        process.env.SQ_shuqijsqdspyURL.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsqdspyURL = process.env.SQ_shuqijsqdspyURL.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsqdspyURL = process.env.SQ_shuqijsqdspyURL.split();
-    }
-    if (
-        process.env.SQ_shuqijsqdspBODY &&
-        process.env.SQ_shuqijsqdspBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsqdspBODY = process.env.SQ_shuqijsqdspBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsqdspBODY = process.env.SQ_shuqijsqdspBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsrwBODY &&
-        process.env.SQ_shuqijsrwBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsrwBODY = process.env.SQ_shuqijsrwBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsrwBODY = process.env.SQ_shuqijsrwBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsfxBODY &&
-        process.env.SQ_shuqijsfxBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsfxBODY = process.env.SQ_shuqijsfxBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsfxBODY = process.env.SQ_shuqijsfxBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijsbookURL &&
-        process.env.SQ_shuqijsbookURL.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsbookURL = process.env.SQ_shuqijsbookURL.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsbookURL = process.env.SQ_shuqijsbookURL.split();
-    }
-    if (
-        process.env.SQ_shuqijsbookBODY &&
-        process.env.SQ_shuqijsbookBODY.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijsbookBODY = process.env.SQ_shuqijsbookBODY.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijsbookBODY = process.env.SQ_shuqijsbookBODY.split();
-    }
-    if (
-        process.env.SQ_shuqijssprwURL &&
-        process.env.SQ_shuqijssprwURL.indexOf(COOKIES_SPLIT) > -1
-    ) {
-        middleshuqijssprwURL = process.env.SQ_shuqijssprwURL.split(COOKIES_SPLIT);
-    } else {
-        middleshuqijssprwURL = process.env.SQ_shuqijssprwURL.split();
+
+    if (process.env.SQ_shuqijsspBODY) {
+
+
+        if (
+            process.env.SQ_shuqijsspBODY &&
+            process.env.SQ_shuqijsspBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsspBODY = process.env.SQ_shuqijsspBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsspBODY = process.env.SQ_shuqijsspBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsydURL &&
+            process.env.SQ_shuqijsydURL.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsydURL = process.env.SQ_shuqijsydURL.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsydURL = process.env.SQ_shuqijsydURL.split();
+        }
+        if (
+            process.env.SQ_shuqijsydBODY &&
+            process.env.SQ_shuqijsydBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsydBODY = process.env.SQ_shuqijsydBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsydBODY = process.env.SQ_shuqijsydBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsqdBODY &&
+            process.env.SQ_shuqijsqdBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsqdBODY = process.env.SQ_shuqijsqdBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsqdBODY = process.env.SQ_shuqijsqdBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsqdspyURL &&
+            process.env.SQ_shuqijsqdspyURL.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsqdspyURL = process.env.SQ_shuqijsqdspyURL.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsqdspyURL = process.env.SQ_shuqijsqdspyURL.split();
+        }
+        if (
+            process.env.SQ_shuqijsqdspBODY &&
+            process.env.SQ_shuqijsqdspBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsqdspBODY = process.env.SQ_shuqijsqdspBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsqdspBODY = process.env.SQ_shuqijsqdspBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsrwBODY &&
+            process.env.SQ_shuqijsrwBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsrwBODY = process.env.SQ_shuqijsrwBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsrwBODY = process.env.SQ_shuqijsrwBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsfxBODY &&
+            process.env.SQ_shuqijsfxBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsfxBODY = process.env.SQ_shuqijsfxBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsfxBODY = process.env.SQ_shuqijsfxBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijsbookURL &&
+            process.env.SQ_shuqijsbookURL.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsbookURL = process.env.SQ_shuqijsbookURL.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsbookURL = process.env.SQ_shuqijsbookURL.split();
+        }
+        if (
+            process.env.SQ_shuqijsbookBODY &&
+            process.env.SQ_shuqijsbookBODY.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijsbookBODY = process.env.SQ_shuqijsbookBODY.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijsbookBODY = process.env.SQ_shuqijsbookBODY.split();
+        }
+        if (
+            process.env.SQ_shuqijssprwURL &&
+            process.env.SQ_shuqijssprwURL.indexOf(COOKIES_SPLIT) > -1
+        ) {
+            middleshuqijssprwURL = process.env.SQ_shuqijssprwURL.split(COOKIES_SPLIT);
+        } else {
+            middleshuqijssprwURL = process.env.SQ_shuqijssprwURL.split();
+        }
+
     }
 }
 if (COOKIE && COOKIE.shuqiuserurlVal) {
@@ -499,7 +506,7 @@ if (COOKIE.shuqiuserurl) {
     COOKIEstringify = JSON.stringify(COOKIE);
     Length = COOKIEstringify.match(/getBindinfo/g).length
 }
-if (!COOKIE) {
+if (!COOKIE.datas && !COOKIE.shuqiuserurlVal&& !COOKIE.shuqiuserurl) {
     if ($.isNode()) {
         Object.keys(middleshuqiuserURL).forEach((item) => {
             if (middleshuqiuserURL[item]) {
@@ -963,8 +970,8 @@ function GetCookie() {
             };
         }
     }
-	
-	    //获取极速版书城
+
+    //获取极速版书城
     if ($request && $request.url.indexOf("convert") >= 0 && $request.body.indexOf("actTaskId=344") >= 0 && $request.body.indexOf("appVer=1") >= 0) {
         const shuqijsbookbodyVal = $request.body;
         if (shuqijsbookbodyVal) {
@@ -1181,7 +1188,7 @@ function GetCookie() {
         }
     }
     //获取分享
-    if ($request && $request.url.indexOf("activity") >= 0&& $request.body.indexOf("appVer=4") >= 0&& $request.body.indexOf("actTaskId=357") >= 0) {
+    if ($request && $request.url.indexOf("activity") >= 0 && $request.body.indexOf("appVer=4") >= 0 && $request.body.indexOf("actTaskId=357") >= 0) {
         const shuqifxbodyVal = $request.body;
         if (shuqifxbodyVal) {
             if (XH == 1) {
@@ -1720,14 +1727,14 @@ async function all() {
     }
     for (let i = 0; i < Length; i++) {
 
-if (COOKIE.datas && COOKIE.datas[0].val != '') {
+        if (COOKIE.datas && COOKIE.datas[0].val != '') {
 
 
-if (i == 0) {
-    op = ``
-} else {
-    op = i + 1
-    }
+            if (i == 0) {
+                op = ``
+            } else {
+                op = i + 1
+            }
 
             shuqiuserurl = COOKIE.datas.find(item => item.key === `shuqiuserurl${op}`);
             shuqisyurl = COOKIE.datas.find(item => item.key === `shuqisyurl${op}`);
@@ -1847,7 +1854,7 @@ if (i == 0) {
             shuqijsbookbodyVal = COOKIE[Object.keys(COOKIE)[iv + 25]];
             shuqijssprwurlVal = COOKIE[Object.keys(COOKIE)[iv + 26]];
         }
-        if (!COOKIE) {
+        if (!COOKIE.datas && !COOKIE.shuqiuserurlVal&& !COOKIE.shuqiuserurl) {
             shuqiuserurlVal = shuqiuserurlArr[i];
             shuqisyurlVal = shuqisyurlArr[i];
             shuqisybodyVal = shuqisybodyArr[i];
@@ -2510,7 +2517,7 @@ function jsreads(timeout = 0) {
                 if ($.jsreads.status == 200) {
                     console.log(`极速版阅读奖励：获得20次奖励,今日已得${$.jsreads.data.todayBizCoinAmount}\n`);
                     $.message += `【极速版阅读奖励】：获得20次奖励,今日已得${$.jsreads.data.todayBizCoinAmount}金币\n`;
-                }else{
+                } else {
                     console.log(`极速版阅读奖励：${$.jsreads.message}\n`);
                     $.message += `【极速版阅读奖励】：${$.jsreads.message}\n`;
                 }
